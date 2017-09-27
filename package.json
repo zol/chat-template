@@ -18,7 +18,8 @@
     "publish-storybook": "bash .scripts/publish_storybook.sh",
     "bundle-js-dev": "webpack --config ./webpack.dev.config.js",
     "bundle-js-prod": "webpack -p --config ./webpack.prod.config.js",
-    "bundle-js": "npm run test && npm run bundle-js-dev && npm run bundle-js-prod"
+    "bundle-js": "npm run test && npm run bundle-js-dev && npm run bundle-js-prod",
+    "chromatic": "chromatic test --app-code='texcn6xyxa' --runtimes=storybook:./.storybook/config.js"
   },
   "devDependencies": {
     "@kadira/storybook": "1.27.0",
@@ -59,6 +60,7 @@
     "material-ui": "0.15.0",
     "object-assign-deep": "0.0.4",
     "react-addons-css-transition-group": "15.1.0",
+    "react-chromatic": "^0.5.2",
     "react-dom": "15.1.0",
     "react-scroll": "^1.5.2",
     "react-scrollbar": "^0.5.1"
